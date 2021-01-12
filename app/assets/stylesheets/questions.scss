@@ -1,0 +1,65 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$white: #FFFFFF;
+$lightgray: #D2D7DF;
+$raisinblack: #1D1E2C;
+$spacecadet: #282a3e;
+
+ body {
+   background: $lightgray; // Using this variable
+ }
+
+ .container-main {
+  margin: 280px auto;
+ }
+
+ .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  margin: 50px auto;
+  width: 540px;
+  height: 250px;
+  border-radius: 12px;
+    h1 {
+      font-size: 32px;
+    }
+    #question-field {
+      margin: 5px;
+      height: 35px;
+      padding: 4px;
+      width: 250px;
+      border-radius: 8px;
+      border: 0.5px solid $spacecadet;
+    }
+
+    #submit {
+      background-color: $raisinblack;
+      color: $white;
+      width: 150px;
+      border-radius: 8px;
+      height: 42px;
+      font-size: 12px;
+      font-family: 'helvetica-light', 'sans-serif';
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: $spacecadet;
+      }
+    }
+    a {
+      color: $spacecadet;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 3px solid $lightgray;
+    }
+ }
+

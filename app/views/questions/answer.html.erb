@@ -1,0 +1,16 @@
+<div class="container-main">
+  <div class="container">
+    <%= @answer %>
+    <p><em>Me</em></p>
+  </div>
+
+  <div class="container">
+    <% if @answer.include? '?' %>
+      <p>Silly question, get dressed and go to work!</p>
+    <% else %>
+    <p>I don't care, get dressed and go to work!</p>
+    <% end %>
+    <p><em>Coach</em></p>
+    <p class="nav-link"><%= link_to "Home", ask_path %></p>
+  </div>
+</div>
